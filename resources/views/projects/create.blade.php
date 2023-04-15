@@ -9,10 +9,16 @@
     Title:
     <br />
     <input type="text" name="title" />
+    @error('title')
+        <p>{{ 'The name field is required' }}</p>
+    @enderror
     <br /><br />
     Description:
     <br />
     <input type="text" name="description" />
+    @error('description')
+        <p>{{ 'The description field is required' }}</p>
+    @enderror
     <br /><br />
     <button type="submit">Save</button>
 </form>
